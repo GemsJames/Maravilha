@@ -43,6 +43,10 @@ void Jogo()
 {
 	CasaPtr *tabuleiro[BOARDSIZE][BOARDSIZE];
 	CasaPtr casa;
+	
+	PlayerPtr player1;
+	PlayerPtr player2;
+
 
 	//Inicia o Tabuleiro
 	for (int i = 0; i < BOARDSIZE; i++)
@@ -53,6 +57,16 @@ void Jogo()
 		}
 	}
 
+
+
+
+
+
+
+
+
+
+	//TESTES
 	for (int i = 0; i < BOARDSIZE; i++)
 	{
 		for (int j = 0; j < BOARDSIZE; j++)
