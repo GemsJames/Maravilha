@@ -1,0 +1,9 @@
+﻿  Source.c
+c:\users\diogo\desktop\maravilha\maravilha\maravilha\source.c(7): warning C4013: 'malloc' undefined; assuming extern returning int
+c:\users\diogo\desktop\maravilha\maravilha\maravilha\source.c(18): warning C4013: 'rand' undefined; assuming extern returning int
+c:\users\diogo\desktop\maravilha\maravilha\maravilha\source.c(31): warning C4028: formal parameter 2 different from declaration
+c:\users\diogo\desktop\maravilha\maravilha\maravilha\source.c(52): warning C4047: '=': 'CasaPtr *' differs in levels of indirection from 'CasaPtr'
+c:\users\diogo\desktop\maravilha\maravilha\maravilha\source.c(60): warning C4047: '=': 'CasaPtr' differs in levels of indirection from 'CasaPtr *'
+c:\users\diogo\desktop\maravilha\maravilha\maravilha\source.c(28): warning C4715: 'RandomChar': not all control paths return a value
+  Maravilha.vcxproj -> C:\Users\diogo\Desktop\Maravilha\Maravilha\Debug\Maravilha.exe
+  Maravilha.vcxproj -> C:\Users\diogo\Desktop\Maravilha\Maravilha\Debug\Maravilha.pdb (Full PDB)
