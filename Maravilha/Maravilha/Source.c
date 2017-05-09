@@ -27,14 +27,18 @@ char RandomChar()
 	}
 }
 
-PlayerPtr CriaPlayer(char* nome, PlayerPtr jogador,int argila, int madeira, int ovo) 
+
+//Cria um Jogador com os argumentos fornecidos
+PlayerPtr CriaPlayer(char nome, PlayerPtr jogador,int argila, int madeira, int ovo, int xcasa, int ycasa) 
 {
 	jogador = (Player*)malloc(sizeof(jogador));
 	jogador->nome = nome;
 	jogador->argila = argila;
 	jogador->madeira = madeira;
 	jogador->ovo = ovo;
-	
+	jogador->xcasa = xcasa;
+	jogador->ycasa = ycasa;
+
 	return jogador;
 }
 
@@ -58,6 +62,10 @@ void Jogo()
 	}
 
 
+	//Cria os jogadores
+	player1 = CriaPlayer('A', player1, 2, 3, 4, 0, 0);
+	player2 = CriaPlayer('Z', player2, 2, 3, 4, BOARDSIZE - 1, BOARDSIZE - 1); //a e z sao nomes temporarios
+
 
 
 
@@ -70,13 +78,17 @@ void Jogo()
 	for (int i = 0; i < BOARDSIZE; i++)
 	{
 		for (int j = 0; j < BOARDSIZE; j++)
+			printf("===");
+		printf("=\n");
+
+		for (int j = 0; j < BOARDSIZE; j++)
 		{
 			casa = tabuleiro[i][j];
 			printf("%c",casa->recurso);
+			printf("%c", casa->aldeia);
 		}
 		printf("\n");
 	}
-
 
 	getchar();
 }
