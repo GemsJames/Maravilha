@@ -17,7 +17,6 @@ typedef struct Casa {
 	char recurso;
 	boolean parede;
 	int aldeia;
-	Player jogador;
 }Casa, *CasaPtr;
 
 static const struct Player NullPlayer;
@@ -25,4 +24,4 @@ static const struct Player NullPlayer;
 void Jogo();
 CasaPtr CriaCasa(int aldeia, boolean parede);
 char RandomChar();
-PlayerPtr CriaPlayer(char* nome, PlayerPtr *jogador, int argila, int madeira, int ovo, int xcasa, int ycasa);
+PlayerPtr MudaPlayer(char* nome, PlayerPtr *jogador, int argila, int madeira, int ovo, int xcasa, int ycasa);

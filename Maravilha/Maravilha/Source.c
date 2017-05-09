@@ -6,7 +6,6 @@ CasaPtr CriaCasa(int aldeia, boolean parede)
 	CasaPtr casa;
 	casa = (CasaPtr)malloc(sizeof(Casa));
 	casa->recurso = RandomChar();
-	casa->jogador = NullPlayer;
 	casa->parede = parede;
 	casa->aldeia = aldeia;
 
@@ -28,10 +27,15 @@ char RandomChar()
 }
 
 
-//Cria um Jogador com os argumentos fornecidos
-PlayerPtr CriaPlayer(char nome, PlayerPtr jogador,int argila, int madeira, int ovo, int xcasa, int ycasa) 
+PlayerPtr CriaPlayer(PlayerPtr jogador) 
 {
 	jogador = (Player*)malloc(sizeof(jogador));
+	return jogador;
+}
+
+//Muda um Jogador com os argumentos fornecidos
+PlayerPtr MudaPlayer(char nome, PlayerPtr jogador,int argila, int madeira, int ovo, int xcasa, int ycasa) 
+{
 	jogador->nome = nome;
 	jogador->argila = argila;
 	jogador->madeira = madeira;
@@ -48,8 +52,8 @@ void Jogo()
 	CasaPtr *tabuleiro[BOARDSIZE][BOARDSIZE];
 	CasaPtr casa;
 	
-	PlayerPtr player1;
-	PlayerPtr player2;
+	PlayerPtr player1 = CriaPlayer(player1);
+	PlayerPtr player2 = CriaPlayer(player2);
 
 
 	//Inicia o Tabuleiro
@@ -63,11 +67,11 @@ void Jogo()
 
 
 	//Cria os jogadores
-	player1 = CriaPlayer('A', player1, 2, 3, 4, 0, 0);
-	player2 = CriaPlayer('Z', player2, 2, 3, 4, BOARDSIZE - 1, BOARDSIZE - 1); //a e z sao nomes temporarios
+	player1 = MudaPlayer('A', player1, 2, 3, 4, 0, 0);
+	player2 = MudaPlayer('Z', player2, 2, 3, 4, BOARDSIZE - 1, BOARDSIZE - 1); //a e z sao nomes temporarios
 
 
-
+	
 
 
 
