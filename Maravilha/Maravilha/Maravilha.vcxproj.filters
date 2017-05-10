@@ -21,6 +21,9 @@
     <ClCompile Include="Game.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Funcoes.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header.h">

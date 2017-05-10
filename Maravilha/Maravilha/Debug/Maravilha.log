@@ -1,13 +1,9 @@
 ﻿  Source.c
-c:\users\diogo\desktop\maravilha\maravilha\maravilha\source.c(7): warning C4013: 'malloc' undefined; assuming extern returning int
-c:\users\diogo\desktop\maravilha\maravilha\maravilha\source.c(18): warning C4013: 'rand' undefined; assuming extern returning int
-c:\users\diogo\desktop\maravilha\maravilha\maravilha\source.c(31): warning C4028: formal parameter 1 different from declaration
-c:\users\diogo\desktop\maravilha\maravilha\maravilha\source.c(31): warning C4028: formal parameter 2 different from declaration
-c:\users\diogo\desktop\maravilha\maravilha\maravilha\source.c(33): warning C4047: '=': 'char *' differs in levels of indirection from 'char'
-c:\users\diogo\desktop\maravilha\maravilha\maravilha\source.c(56): warning C4047: '=': 'CasaPtr *' differs in levels of indirection from 'CasaPtr'
-c:\users\diogo\desktop\maravilha\maravilha\maravilha\source.c(78): warning C4047: '=': 'CasaPtr' differs in levels of indirection from 'CasaPtr *'
-c:\users\diogo\desktop\maravilha\maravilha\maravilha\source.c(48): warning C4101: 'player2': unreferenced local variable
-c:\users\diogo\desktop\maravilha\maravilha\maravilha\source.c(47): warning C4101: 'player1': unreferenced local variable
-c:\users\diogo\desktop\maravilha\maravilha\maravilha\source.c(28): warning C4715: 'RandomChar': not all control paths return a value
+c:\users\diogo\desktop\maravilha\maravilha\maravilha\source.c(19): warning C4047: '=': 'CasaPtr *' differs in levels of indirection from 'CasaPtr'
+c:\users\diogo\desktop\maravilha\maravilha\maravilha\source.c(24): warning C4047: 'function': 'PlayerPtr *' differs in levels of indirection from 'PlayerPtr'
+c:\users\diogo\desktop\maravilha\maravilha\maravilha\source.c(24): warning C4024: 'MudaPlayer': different types for formal and actual parameter 2
+c:\users\diogo\desktop\maravilha\maravilha\maravilha\source.c(25): warning C4047: 'function': 'PlayerPtr *' differs in levels of indirection from 'PlayerPtr'
+c:\users\diogo\desktop\maravilha\maravilha\maravilha\source.c(25): warning C4024: 'MudaPlayer': different types for formal and actual parameter 2
+c:\users\diogo\desktop\maravilha\maravilha\maravilha\source.c(44): warning C4047: '=': 'CasaPtr' differs in levels of indirection from 'CasaPtr *'
   Maravilha.vcxproj -> C:\Users\diogo\Desktop\Maravilha\Maravilha\Debug\Maravilha.exe
   Maravilha.vcxproj -> C:\Users\diogo\Desktop\Maravilha\Maravilha\Debug\Maravilha.pdb (Full PDB)

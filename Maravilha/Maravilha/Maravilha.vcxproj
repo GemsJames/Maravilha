@@ -146,6 +146,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Funcoes.c" />
     <ClCompile Include="Game.c" />
     <ClCompile Include="Source.c" />
   </ItemGroup>
